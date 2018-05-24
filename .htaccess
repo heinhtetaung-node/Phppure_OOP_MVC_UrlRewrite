@@ -1,0 +1,7 @@
+RewriteEngine On    
+RewriteBase /ap
+RewriteRule ^([a-zA-Z0-9-_]+)/?$ purchase/api/index.php?action=$1 
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ purchase/api/index.php?action=$1&PGMODE=$2 
+
+
+
